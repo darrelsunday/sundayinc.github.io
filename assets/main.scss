@@ -1,0 +1,50 @@
+---
+---
+
+$site-width: 50em;
+
+#site-container {
+	max-width: $site-width;
+	margin: 0 auto;
+	background: lightgoldenrodyellow;
+}
+
+main {
+	max-width: $site-width;
+	margin: 2em;
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.header {
+	display: flex;
+	&__name {
+		font-family: 'Lora', serif;
+		h1 {
+			font-size: 2.4em;
+		}
+		p {
+			font-size: 1em;
+		}
+	}
+	&__logo {
+		margin-right: 2em;
+		img {
+			width: 10em;
+		}
+	}
+}
+
+.about {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	&__image {
+		padding: 1em;
+		img {
+			width: 20em;
+		}
+	}
+}
