@@ -1,50 +1,93 @@
 ---
 ---
 
-$site-width: 50em;
+html, body {
+	margin: 0;
+	padding: 0;
+}
 
 #site-container {
-	max-width: $site-width;
-	margin: 0 auto;
-	background: lightgoldenrodyellow;
-}
-
-main {
-	max-width: $site-width;
-	margin: 2em;
-	p {
-		margin: 0;
-		padding: 0;
-	}
-}
-
-.header {
 	display: flex;
-	&__name {
-		font-family: 'Lora', serif;
-		h1 {
-			font-size: 2.4em;
+	padding: 4em;
+	font-family: 'Tajawal', sans-serif;
+	span {
+		display: block;
+	}
+}
+
+.left {
+	width: 40em;
+	.header {
+		display: flex;
+		align-items: center;
+		background: white;
+		&__title {
+			&__name {
+				margin: 0;
+				font-size: 3.4em;
+				font-weight: 800;
+			}
+			&__call {
+				margin: 0.2em 0 0 0;
+				font-size: 1.4em;
+				font-weight: 400;
+			}
 		}
-		p {
-			font-size: 1em;
+		&__logo {
+			margin-right: 2em;
+			img {
+				width: 10em;
+			}
 		}
 	}
-	&__logo {
-		margin-right: 2em;
-		img {
-			width: 10em;
+	.about {
+		display: flex;
+		margin-top: 4em;
+		&__left {
+			&__image {
+				margin-right: 2em;
+				img {
+					width: 20em;
+				}
+			}
+			&__contact {
+
+			}
+		}
+		&__right {
+			&__name {
+				font-size: 2em;
+				font-weight: 500;
+			}
+			&__title {
+				margin: 0.1em 0 1em 0;
+				font-size: 1.2em;
+				font-weight: 400;
+				font-style: italic;
+			}
+			&__text {
+
+			}
 		}
 	}
 }
 
-.about {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	&__image {
-		padding: 1em;
-		img {
-			width: 20em;
+.right {
+	margin: 4em 0 0 4em;
+	flex: 1;
+	.projects {
+		overflow: auto;
+		&__header {
+			text-align: center;
+			&__text {
+				display: inline !important;
+				font-size: 2em;
+				font-weight: 500;
+				border-bottom: 0.1em solid black;
+			}
+		}
+		&__item {
+			
 		}
 	}
 }

@@ -2,14 +2,44 @@
 layout: default
 ---
 
-<div class="about">
-	<div class="about__text">
-		<h3>Darrel Sunday, <i>Environmental Advisor</i></h3>
-		<p>
-			{{ site.data.edit.about }}
-		</p>
+<div id="site-container">
+	<div class="left">
+		<div class="header">
+			<div class="header__logo">
+				<img src="/assets/logo.svg" alt="sunday-logo" onerror="this.src='/assets/logo.png'">
+			</div>
+			<div class="header__title">
+				<span class="header__title__name">{{ site.data.edit.title }}</span>
+				<span class="header__title__call">{{ site.data.edit.description }}</span>
+			</div>
+		</div>
+		<div class="about">
+			<div class="about__left">
+				<div class="about__left__image">
+					<img src="/assets/sunday.jpg" alt="sunday">
+				</div>
+				<div class="about__left__contact">
+					<span>phone</span>
+					<span>email</span>
+				</div>
+			</div>
+			<div class="about__right">
+				<span class="about__right__name">Darrel Sunday,</span>
+				<span class="about__right__title">Environmental Advisor</span>
+				<span class="about__right__text">
+					{{ site.data.edit.about }}
+				</span>
+			</div>
+		</div>
 	</div>
-	<div class="about__image">
-		<img src="/assets/sunday.jpg" alt="sunday">
+	<div class="right">
+		<div class="projects__header">
+			<span class="projects__header__text">Featured Projects</span>
+		</div>
+		<div class="projects">
+			<div class="projects__item">
+				<span></span>
+			</div>
+		</div>
 	</div>
 </div>
