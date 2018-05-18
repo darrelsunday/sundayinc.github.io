@@ -1,0 +1,15 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: $white;
+	color: $black;
+}
+
+#site-container {
+	display: flex;
+	padding: 4em;
+	font-family: 'Tajawal', sans-serif;
+	span {
+		display: block;
+	}
+}
