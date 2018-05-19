@@ -2,3 +2,10 @@ timezone: UTC
 sass:
   sass_dir: _sass
   style: compressed
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  services:
+    output: true
+    permalink: /services/:path/
