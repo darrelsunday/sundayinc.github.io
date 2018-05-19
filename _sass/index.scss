@@ -1,7 +1,7 @@
+$blue: #18168F;
 $white: #fcfcfc;
 $white-pure: #fefefe;
 $black: #2f2f2f;
-$radius: 0.5em;
 
 // https://css-tricks.com/snippets/sass/material-shadows-mixin/
 @function top-shadow($depth) {
@@ -28,7 +28,7 @@ $radius: 0.5em;
 
 @import
 	"base",
-	"left",
-	"right",
-	"projects"
+	"header",
+	"about",
+	"featured"
 ;

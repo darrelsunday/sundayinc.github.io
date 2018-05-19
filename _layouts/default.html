@@ -11,8 +11,8 @@
 </head>
 <body>
 	<div id="site-container">
-		<div class="left">
-			<div class="header">
+		<div class="header">
+			<div class="header__left">
 				<div class="header__logo">
 					<img src="/assets/logo.svg" alt="sunday-logo" onerror="this.src='/assets/logo.png'">
 				</div>
@@ -21,28 +21,16 @@
 					<span class="header__title__slogan">{{ site.data.edit.description }}</span>
 				</div>
 			</div>
-			<div class="about">
-				<div class="about__left">
-					<div class="about__left__image">
-						<img src="/assets/sunday.jpg" alt="sunday">
-					</div>
-					<div class="about__left__contact">
-						<span>email: <a href="mailto:darrel@sundayinc.com">darrel@sundayinc.com</a></span>
-						<span>phone: <a href="tel:509-123-4567">(509) 123-4567</a></span>
-					</div>
-				</div>
-				<div class="about__right">
-					<span class="about__right__name">Darrel Sunday</span>
-					<span class="about__right__title">Environmental Advisor</span>
-					<span class="about__right__text">
-						{{ site.data.edit.about }}
-					</span>
-				</div>
-			</div>
+			<ul class="header__right">
+				<li class="header__link"><a href="/">Home</a></li>
+				<li class="header__link"><a href="/projects">Projects</a></li>
+				<li class="header__link"><a href="/services">Services</a></li>
+				<li class="header__link"><a href="/contact">Contact</a></li>
+			</ul>
 		</div>
-		<div class="right">
+		<main>
 			{{ content }}
-		</div>
+		</main>
 	</div>
 </body>
 </html>

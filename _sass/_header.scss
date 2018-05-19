@@ -1,0 +1,49 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 80em;
+	margin: 0 auto 4em auto;
+	&__left {
+		display: flex;
+		align-items: center;
+		margin: 0 4em 0 0;
+	}
+	&__right {
+		flex-grow: 1;
+		text-align: right;
+	}
+	&__title {
+		&__name {
+			margin: 0;
+			font-size: 3em;
+			font-weight: 800;
+		}
+		&__slogan {
+			margin-top: 0.2em;
+			font-size: 1.2em;
+			font-weight: 400;
+		}
+	}
+	&__logo {
+		margin-right: 2em;
+		img {
+			width: 10em;
+		}
+	}
+	&__link {
+		display: inline;
+		font-size: 1.2em;
+		&:not(:last-child) {
+			margin-right: 1em;
+			&:after {
+				content: "/";
+				margin-left: 1em;
+			}
+		}
+		a:hover {
+			text-decoration: underline !important;
+		}
+	}
+}

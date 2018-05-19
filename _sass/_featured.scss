@@ -1,0 +1,46 @@
+.featured {
+	margin: 6em 0;
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -1em;
+	}
+	&__header {
+		margin-bottom: 0.5em;
+		font-size: 2em;
+		font-weight: 500;
+	}
+	&__item {
+		flex: 1 0 15em;
+		position: relative;
+		height: 15em;
+		overflow: hidden;
+		margin: 1em;
+		transition: all 200ms;
+		@include card(2);
+		&:hover {
+			transform: translateY(-0.1em);
+			@include card(3);
+		}
+		&:active {
+			transform: translateY(0.1em);
+			@include card(2);
+		}
+		&__image {
+			width: 100%;
+			height: auto;
+			z-index: -1;
+		}
+		&__content {
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			width: 100%;
+			padding: 2em 1.5em;
+			background: $black;
+			&__text {
+				color: $white;
+			}
+		}
+	}
+}

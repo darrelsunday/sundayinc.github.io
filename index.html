@@ -2,19 +2,29 @@
 layout: default
 ---
 
-<div class="projects">
-	<div class="projects__header">
-		<span class="projects__header__text">Featured Projects</span>
+<div class="about">
+	<div class="about__image">
+		<img src="/assets/sunday.jpg" alt="sunday">
 	</div>
-	{% for post in site.posts %}
-	<a href="{{ post.url }}"><div class="projects__item">
-		<div class="projects__item__image">
-			<img src="/images/{{ post.image }}" alt="{{ post.title }}">
-		</div>
-		<div class="projects__item__content">
-			<span class="projects__item__content__date">{{ post.date | date_to_string }}</span>
-			<span class="projects__item__content__title">{{ post.title }}</span>
-		</div>
-	</div></a>
-	{% endfor %}
+	<div class="about__content">
+		<span class="about__content__name">Darrel Sunday</span>
+		<span class="about__content__title">Environmental Advisor</span>
+		<span class="about__content__text">
+			{{ site.data.edit.about }}
+		</span>
+	</div>
+</div>
+
+<div class="featured">
+	<span class="featured__header">Featured Projects</span>
+	<div class="featured__container">
+		{% for post in site.posts limit:3 %}
+		<div class="featured__item"><a href="{{ post.url }}">
+			<img class="featured__item__image" src="/images/{{ post.image }}" alt="{{ post.title }}">
+			<div class="featured__item__content">
+				<span class="featured__item__content__text">{{ post.date | date_to_string }} - {{ post.title }}</span>
+			</div>
+		</a></div>
+		{% endfor %}
+	</div>
 </div>
