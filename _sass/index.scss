@@ -3,6 +3,9 @@ $white: #fcfcfc;
 $white-pure: #fefefe;
 $black: #2f2f2f;
 
+$tablet: 80em;
+$mobile: 50em;
+
 // https://css-tricks.com/snippets/sass/material-shadows-mixin/
 @function top-shadow($depth) {
 	$primary-offset: nth(1.5 3 10 14 19, $depth) * 1px;

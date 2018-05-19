@@ -2,39 +2,70 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
 	max-width: 80em;
 	margin: 0 auto 4em auto;
+	@media screen and (max-width: $tablet) {
+		flex-direction: column;
+	}
+	@media screen and (max-width: $mobile) {
+		flex-direction: column-reverse;
+	}
 	&__left {
 		display: flex;
 		align-items: center;
-		margin: 0 4em 0 0;
-	}
-	&__right {
-		flex-grow: 1;
-		text-align: right;
+		margin-right: 4em;
+		@media screen and (max-width: $tablet) {
+			margin-right: 0;
+		}
 	}
 	&__title {
 		&__name {
 			margin: 0;
 			font-size: 3em;
 			font-weight: 800;
+			@media screen and (max-width: $mobile) {
+				font-size: 2em;
+			}
 		}
 		&__slogan {
 			margin-top: 0.2em;
 			font-size: 1.2em;
 			font-weight: 400;
+			@media screen and (max-width: $mobile) {
+				font-size: 1em;
+			}
 		}
 	}
 	&__logo {
 		margin-right: 2em;
+		@media screen and (max-width: $mobile) {
+			margin-right: 1em;
+		}
 		img {
 			width: 10em;
+			@media screen and (max-width: $mobile) {
+				width: 5em;
+			}
+		}
+	}
+	&__right {
+		flex: 1 0 auto;
+		padding: 0;
+		text-align: right;
+		@media screen and (max-width: $tablet) {
+			margin: 1em 0;
+			text-align: center;
+		}
+		@media screen and (max-width: $mobile) {
+			margin: 2em 0;
 		}
 	}
 	&__link {
 		display: inline;
 		font-size: 1.2em;
+		@media screen and (max-width: $mobile) {
+			font-size: 1em;
+		}
 		&:not(:last-child) {
 			margin-right: 1em;
 			&:after {

@@ -1,24 +1,38 @@
 .featured {
 	margin: 6em 0;
+	@media screen and (max-width: $tablet) {
+		margin: 4em 0;
+	}
+	@media screen and (max-width: $mobile) {
+		margin: 2em 0;
+	}
 	&__container {
 		display: flex;
-		flex-wrap: wrap;
 		margin: 0 -1em;
+		@media screen and (max-width: $mobile) {
+			flex-wrap: wrap;
+		}
 	}
 	&__header {
 		margin-bottom: 0.5em;
 		font-size: 2em;
 		font-weight: 500;
+		@media screen and (max-width: $mobile) {
+			margin-bottom: 0;
+		}
 	}
 	&__item {
-		flex: 1 0 15em;
-		position: relative;
+		flex: 1 1 100%;
+		display: flex;
+		align-items: flex-end;
 		height: 15em;
-		overflow: hidden;
 		margin: 1em;
+		background-position: center center;
+		background-size: cover;
 		transition: all 200ms;
 		@include card(2);
 		&:hover {
+			text-decoration: none !important;
 			transform: translateY(-0.1em);
 			@include card(3);
 		}
@@ -26,16 +40,11 @@
 			transform: translateY(0.1em);
 			@include card(2);
 		}
-		&__image {
-			width: 100%;
-			height: auto;
-			z-index: -1;
+		@media screen and (max-width: $mobile) {
+			height: 15em;
 		}
 		&__content {
-			position: absolute;
-			z-index: 1;
-			bottom: 0;
-			width: 100%;
+			flex: 1;
 			padding: 2em 1.5em;
 			background: $black;
 			&__text {

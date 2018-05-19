@@ -28,4 +28,7 @@ main {
 #site-container {
 	padding: 4em;
 	font-family: 'Tajawal', sans-serif;
+	@media screen and (max-width: $mobile) {
+		padding: 2em;
+	}
 }

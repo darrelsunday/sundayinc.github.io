@@ -19,12 +19,11 @@ layout: default
 	<span class="featured__header">Featured Projects</span>
 	<div class="featured__container">
 		{% for project in site.projects limit:3 %}
-		<div class="featured__item"><a href="{{ project.url }}">
-			<img class="featured__item__image" src="/assets/{{ project.image }}" alt="{{ project.title }}">
+		<a class="featured__item" style="background-image: url(/assets/{{ project.image }})" href="{{ project.url }}">
 			<div class="featured__item__content">
 				<span class="featured__item__content__text">{{ project.date | date_to_string }} - {{ project.title }}</span>
 			</div>
-		</a></div>
+		</a>
 		{% endfor %}
 	</div>
 	<span class="featured__footer"><a href="/projects">All projects &rarr;</a></span>
