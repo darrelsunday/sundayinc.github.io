@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2018-01-01
-image: PROJECT_IMAGE.JPG
+image: tractor.jpg
 title: Project Name
 ---
 
