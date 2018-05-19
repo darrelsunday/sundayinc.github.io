@@ -23,12 +23,10 @@
 	}
 	&__item {
 		flex: 1 1 100%;
-		display: flex;
-		align-items: flex-end;
-		height: 15em;
 		margin: 1em;
-		background-position: center center;
-		background-size: cover;
+		padding: 2em 1.5em;
+		text-align: right;
+		background: $white;
 		transition: all 200ms;
 		@include card(2);
 		&:hover {
@@ -40,16 +38,11 @@
 			transform: translateY(0.1em);
 			@include card(2);
 		}
-		@media screen and (max-width: $mobile) {
-			height: 15em;
+		&__title {
+			font-size: 1.4em;
 		}
-		&__content {
-			flex: 1;
-			padding: 2em 1.5em;
-			background: $black;
-			&__text {
-				color: $white;
-			}
+		&__date {
+			margin-top: 1em;
 		}
 	}
 	&__footer {

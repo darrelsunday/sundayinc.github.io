@@ -20,10 +20,9 @@ layout: default
 	<div class="recent-projects__container">
 		{% assign sorted = (site.projects | sort: 'date') | reverse %}
 		{% for project in sorted limit:3 %}
-		<a class="recent-projects__item" style="background-image: url(/assets/{{ project.image }})" href="{{ project.url }}">
-			<div class="recent-projects__item__content">
-				<span class="recent-projects__item__content__text">{{ project.date | date_to_string }} - {{ project.title }}</span>
-			</div>
+		<a class="recent-projects__item" href="{{ project.url }}">
+			<span class="recent-projects__item__title">{{ project.title }}</span>
+			<span class="recent-projects__item__date">{{ project.date | date_to_string }}</span>
 		</a>
 		{% endfor %}
 	</div>

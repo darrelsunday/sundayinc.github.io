@@ -1,7 +1,6 @@
 ---
 layout: post
 date: 2017-05-19
-image: PICT0285.JPG
 title: Project Name
 ---
 
