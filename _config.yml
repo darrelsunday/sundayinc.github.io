@@ -1,11 +1,21 @@
+---
+title: Sundayinc.Github.Io
 timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+    permalink: "/projects/:path/"
+  services:
+    title: Services
+    output: true
+    permalink: "/services/:path/"
+  uploads:
+    title: Uploads
+    output: true
 sass:
   sass_dir: _sass
   style: compressed
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-  services:
-    output: true
-    permalink: /services/:path/
