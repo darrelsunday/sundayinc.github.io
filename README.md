@@ -22,3 +22,11 @@
 6. Now open the `assets` folder in a new tab
 7. Click `Upload files`
 8. Click `choose your files` and navigate to the image you want to include with your project. It's filename needs to match what you entered above. Example: `PROJECT_IMAGE.JPG`
+
+## Editing a project
+
+1. Open the `_projects` folder in a new tab (so you can refer to these instructions)
+2. Open the post you want to edit
+3. Click on the pencil icon (hovering on it should reveal `Edit this file`)
+4. Make your changes
+5. Scroll down and click `Commit changes` to publish your edit
