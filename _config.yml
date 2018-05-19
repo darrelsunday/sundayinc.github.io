@@ -1,10 +1,6 @@
 ---
 title: Sundayinc.Github.Io
 timezone: UTC
-future: true
-sass:
-  sass_dir: _sass
-  style: compressed
 collections:
   posts:
     title: Posts
@@ -20,6 +16,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+future: true
 sass:
   sass_dir: _sass
   style: compressed
