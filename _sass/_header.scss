@@ -8,7 +8,7 @@
 		flex-direction: column;
 	}
 	@media screen and (max-width: $mobile) {
-		flex-direction: column-reverse;
+		margin: 2em 0;
 	}
 	&__left {
 		display: flex;

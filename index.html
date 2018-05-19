@@ -15,16 +15,17 @@ layout: default
 	</div>
 </div>
 
-<div class="featured">
-	<span class="featured__header">Featured Projects</span>
-	<div class="featured__container">
-		{% for project in site.projects limit:3 %}
-		<a class="featured__item" style="background-image: url(/assets/{{ project.image }})" href="{{ project.url }}">
-			<div class="featured__item__content">
-				<span class="featured__item__content__text">{{ project.date | date_to_string }} - {{ project.title }}</span>
+<div class="recent-projects">
+	<span class="recent-projects__header">Recent Projects</span>
+	<div class="recent-projects__container">
+		{% assign sorted = (site.projects | sort: 'date') | reverse %}
+		{% for project in sorted limit:3 %}
+		<a class="recent-projects__item" style="background-image: url(/assets/{{ project.image }})" href="{{ project.url }}">
+			<div class="recent-projects__item__content">
+				<span class="recent-projects__item__content__text">{{ project.date | date_to_string }} - {{ project.title }}</span>
 			</div>
 		</a>
 		{% endfor %}
 	</div>
-	<span class="featured__footer"><a href="/projects">All projects &rarr;</a></span>
+	<span class="recent-projects__footer"><a href="/projects">All projects &rarr;</a></span>
 </div>
