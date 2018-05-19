@@ -6,6 +6,8 @@
 2. Click `Create new file`
 3. Enter a filename where it says `Name your file...`. Example: `my-project.md` (IMPORTANT: must have `.md` at the end)
 4. Add the following to the text editor. Edit the `image` with the filename of the project image on your computer.
+   
+   ```
    ---
    layout: post
    date: 2018-01-01
@@ -14,6 +16,8 @@
    ---
    
    Write about your project
+   ```
+
 5. Once you're done, scroll down and click `Commit new file` to publish the project
 6. Go back to the [project page](https://github.com/sundayinc/sundayinc.github.io)
 7. Open the `assets` folder
