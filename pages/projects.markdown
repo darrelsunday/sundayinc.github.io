@@ -11,8 +11,7 @@ DO NOT EDIT BELOW THIS LINE
 -->
 
 <div>
-	{% assign sorted = (site.projects | sort: 'date') | reverse %}
-	{% for project in sorted %}
+	{% for project in site.projects %}
 	<span>{{ project.date | date_to_string }} - {{ project.title }}</span>
 	{% endfor %}
 </div>

@@ -29,8 +29,7 @@ DO NOT EDIT BELOW THIS LINE
 <div class="recent-projects">
 	<span class="recent-projects__header">Recent Projects</span>
 	<div class="recent-projects__container">
-		{% assign sorted = (site.projects | sort: 'date') | reverse %}
-		{% for project in sorted limit:3 %}
+		{% for project in site.posts limit:3 %}
 		<a class="recent-projects__item" href="{{ project.url }}">
 			<span class="recent-projects__item__title">{{ project.title }}</span>
 			<span class="recent-projects__item__date">{{ project.date | date_to_string }}</span>
