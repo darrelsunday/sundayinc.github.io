@@ -44,6 +44,7 @@
 			min-width: 8em;
 			height: 4em;
 			margin: 1em;
+			background: $white-pure;
 			transition: all 200ms;
 			@include card(1);
 			&:hover {
