@@ -55,11 +55,13 @@ DO NOT EDIT BELOW THIS LINE
 		<span class="featured-services__about__all"><a href="/services">All services &rarr;</a></span>
 	</div>
 	<div class="featured-services__content">
-		{% for service in site.services %}
-		<a class="featured-services__content__item" href="/services#{{ service.title }}">
-			<span class="featured-services__content__item__text">{{ service.title }}</span>
-		</a>
-		{% endfor %}
+		<div class="featured-services__content__container">
+			{% for service in site.services %}
+			<a class="featured-services__content__item" href="/services#{{ service.title }}">
+				<span class="featured-services__content__item__text">{{ service.title }}</span>
+			</a>
+			{% endfor %}
+		</div>
 	</div>
 </div>
 

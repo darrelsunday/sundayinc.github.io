@@ -1,7 +1,7 @@
 .recent-projects {
 	display: flex;
 	align-items: center;
-	margin: 6em -4em;
+	margin: 6em -2em;
 	@media screen and (max-width: $tablet) {
 		margin: 4em -2em;
 	}
@@ -11,7 +11,7 @@
 	}
 	> * {
 		flex: 1;
-		margin: 0 4em;
+		margin: 0 2em;
 		@media screen and (max-width: $tablet) {
 			margin: 0 2em;
 		}
