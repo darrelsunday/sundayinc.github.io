@@ -1,13 +1,64 @@
 .featured-services {
-	margin: 4em 0;
-	&__header {
-		margin-bottom: 0.5em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 6em -2em;
+	@media screen and (max-width: $tablet) {
+		margin: 4em 0;
+	}
+	@media screen and (max-width: $mobile) {
+		margin: 2em 0;
+	}
+	> * {
+		flex: 1;
+		margin: 0 2em;
+		@media screen and (max-width: $tablet) {
+			flex-basis: 100%;
+			margin: 2em 0;
+		}
+	}
+	&__about {
+		&__header {
+			margin-bottom: 0.5em;
 			font-size: 2em;
 			font-weight: 500;
+		}
+		&__text {
+			line-height: 1.6em;
+			font-size: 1em;
+		}
+		&__all {
+			margin-top: 1em;
+			font-size: 1.2em;
+		}
 	}
-	&__container {
+	&__content {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
-		margin: 1em -1em;
+		margin: -1em;
+		&__item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 8em;
+			height: 4em;
+			margin: 1em;
+			transition: all 200ms;
+			@include card(1);
+			&:hover {
+				text-decoration: none !important;
+				transform: translateY(-0.1em);
+				@include card(2);
+			}
+			&:active {
+				transform: translateY(0.1em);
+				@include card(1);
+			}
+			&__text {
+				font-size: 1.4em;
+				margin-bottom: -0.4em;
+			}
+		}
 	}
 }

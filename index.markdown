@@ -5,7 +5,27 @@ layout: default
 
 {% assign ABOUT_TEXT = "
 
-About text...
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus nibh 
+turpis, vitae eleifend massa mattis facilisis. Integer feugiat vitae metus 
+vulputate dapibus. Phasellus interdum odio eget mollis placerat. Quisque 
+turpis justo, malesuada quis ipsum quis, varius iaculis nisl. Praesent 
+ultricies eget lorem eget interdum. Pellentesque a dictum massa, ut dictum 
+tellus. Orci varius natoque penatibus et magnis dis parturient montes, 
+nascetur ridiculus mus. Curabitur maximus eget velit quis aliquam. Aenean sit 
+amet euismod libero, vulputate consectetur ante.
+
+" %}
+
+
+{% assign SERVICES_TEXT = "
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus nibh 
+turpis, vitae eleifend massa mattis facilisis. Integer feugiat vitae metus 
+vulputate dapibus. Phasellus interdum odio eget mollis placerat. Quisque turpis 
+justo, malesuada quis ipsum quis, varius iaculis nisl. Praesent ultricies eget 
+lorem eget interdum. Pellentesque a dictum massa, ut dictum tellus. Orci varius 
+natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur 
+maximus eget velit quis aliquam.
 
 " %}
 
@@ -27,15 +47,26 @@ DO NOT EDIT BELOW THIS LINE
 </div>
 
 <div class="featured-services">
-	<span class="featured-services__header">Featured Services</span>
-	<div class="featured-services__container">
+	<div class="featured-services__about">
+		<span class="featured-services__about__header">Featured Services</span>
+		<span class="featured-services__about__text">
+				{{ SERVICES_TEXT }}
+		</span>
+		<span class="featured-services__about__all"><a href="/services">All services &rarr;</a></span>
+	</div>
+	<div class="featured-services__content">
 		{% for service in site.services %}
-		<span>{{ service.title }}</span>
+		<a class="featured-services__content__item" href="/services#{{ service.title }}">
+			<span class="featured-services__content__item__text">{{ service.title }}</span>
+		</a>
 		{% endfor %}
 	</div>
 </div>
 
 <div class="recent-projects">
+	<div class="recent-projects__image">
+		<img src="/assets/projects.jpg" alt="projects">
+	</div>
 	<div class="recent-projects__content">
 		<span class="recent-projects__content__header">Recent Projects</span>
 		<div class="recent-projects__content__container">
@@ -44,9 +75,6 @@ DO NOT EDIT BELOW THIS LINE
 			<a class="recent-projects__content__item" href="{{ project.url }}">{{ project.date | date_to_string }} - {{ project.title }}</a>
 			{% endfor %}
 		</div>
-		<span class="recent-projects__content__footer"><a href="/projects">All projects &rarr;</a></span>
-	</div>
-	<div class="recent-projects__image">
-		<img src="/assets/projects.jpg" alt="projects">
+		<span class="recent-projects__content__all"><a href="/projects">All projects &rarr;</a></span>
 	</div>
 </div>

@@ -1,12 +1,12 @@
 .recent-projects {
 	display: flex;
 	align-items: center;
-	margin: 4em -4em;
+	margin: 6em -4em;
 	@media screen and (max-width: $tablet) {
 		margin: 4em -2em;
 	}
 	@media screen and (max-width: $mobile) {
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 		margin: 4em 0;
 	}
 	> * {
@@ -17,7 +17,7 @@
 		}
 		@media screen and (max-width: $mobile) {
 			flex-basis: 100%;
-			margin: 2em 0;
+			margin: 1em 0;
 		}
 	}
 	&__image {
@@ -42,7 +42,7 @@
 			margin: 1em 0;
 			font-size: 1.4em;
 		}
-		&__footer {
+		&__all {
 			margin: 1em 1em 0 0;
 			text-align: right;
 			font-size: 1.2em;
