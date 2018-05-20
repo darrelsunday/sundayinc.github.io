@@ -11,7 +11,7 @@ collections:
     permalink: "/projects/:path/"
   services:
     title: Services
-    output: true
+    output: false
     permalink: "/services/:path/"
   uploads:
     title: Uploads
