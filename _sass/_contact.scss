@@ -1,4 +1,4 @@
-.services {
+.contact {
 	margin-top: 6em;
 	&__header {
 		margin-bottom: 1em;
@@ -6,11 +6,7 @@
 		font-size: 3em;
 		font-weight: 700;
 	}
-	&__item {
-		padding: 2em 0;
-		&__title {
-			font-size: 1.4em;
-			font-weight: 500em;
-		}
+	&__content {
+		text-align: center;
 	}
 }

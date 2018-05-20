@@ -1,7 +1,9 @@
 ---
 title: Contact
 permalink: "/contact/"
-layout: default
+layout: contact
 ---
 
-# Contact
+email: darrel@sundayinc.com
+
+phone: (509) 123-4567

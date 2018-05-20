@@ -4,15 +4,14 @@ permalink: "/projects/"
 layout: default
 ---
 
-# Projects
-
-<!--
-DO NOT EDIT BELOW THIS LINE
--->
-
-<div>
+<div class="projects">
+	<span class="projects__header">Projects</span>
 	{% assign sorted = (site.projects | sort: 'date') | reverse %}
 	{% for project in sorted limit:3 %}
-	<span>{{ project.date | date_to_string }} - {{ project.title }}</span>
+	<div class="projects__item">
+		<span class="projects__item__title">{{ project.title }}</span>
+		<span class="projects__item__date">{{ project.date | date_to_string }}</span>
+		<!--EXERPT-->
+	</div>
 	{% endfor %}
 </div>
