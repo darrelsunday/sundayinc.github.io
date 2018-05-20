@@ -61,9 +61,15 @@
 				transform: translateY(0.1em);
 				@include card(1);
 			}
+			@media screen and (max-width: $mobile) {
+				min-width: 4em;
+			}
 			&__text {
 				font-size: 1.4em;
 				margin-bottom: -0.4em;
+				@media screen and (max-width: $mobile) {
+					font-size: 1em;
+				}
 			}
 		}
 	}
