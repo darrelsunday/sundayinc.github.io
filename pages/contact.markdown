@@ -3,4 +3,4 @@ permalink: "/contact/"
 layout: default
 ---
 
-<h1>Contact</h1>
+# Contact

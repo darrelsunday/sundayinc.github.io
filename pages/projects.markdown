@@ -3,7 +3,7 @@ permalink: "/projects/"
 layout: default
 ---
 
-<h1>Projects</h1>
+# Projects
 
 <div>
 	{% assign sorted = (site.projects | sort: 'date') | reverse %}
