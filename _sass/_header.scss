@@ -7,7 +7,7 @@
 	@media screen and (max-width: $tablet) {
 		flex-direction: column;
 	}
-	@media screen and (max-width: $mobile) {
+	@media screen and (max-width: $tablet-sm) {
 		margin: 2em 0;
 	}
 	&__left {

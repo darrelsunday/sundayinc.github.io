@@ -31,4 +31,7 @@ main {
 	@media screen and (max-width: $mobile) {
 		padding: 2em;
 	}
+	@media screen and (max-width: $mobile-sm) {
+		padding: 1em;
+	}
 }

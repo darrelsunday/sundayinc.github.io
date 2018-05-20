@@ -2,14 +2,14 @@
 	display: flex;
 	align-items: center;
 	margin: 4em -1em;
-	@media screen and (max-width: $mobile) {
+	@media screen and (max-width: $tablet-sm) {
 		flex-wrap: wrap-reverse;
 		margin: 0 -1em;
 	}
 	&__image {
 		flex: 1 3 100%;
 		margin: 0 1em;
-		@media screen and (max-width: $mobile) {
+		@media screen and (max-width: $tablet-sm) {
 			margin-top: 1em;
 		}
 		img {

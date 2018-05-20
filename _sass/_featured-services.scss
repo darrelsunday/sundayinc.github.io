@@ -3,7 +3,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 6em -2em;
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: $tablet-sm) {
 		margin: 4em 0;
 	}
 	@media screen and (max-width: $mobile) {
@@ -12,7 +12,7 @@
 	> * {
 		flex: 1;
 		margin: 0 2em;
-		@media screen and (max-width: $mobile) {
+		@media screen and (max-width: $tablet-sm) {
 			flex-basis: 100%;
 			margin: 2em 0;
 		}
@@ -37,7 +37,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			margin: -1em;
-			@media screen and (max-width: $mobile) {
+			@media screen and (max-width: $tablet-sm) {
 				justify-content: center;
 			}
 		}

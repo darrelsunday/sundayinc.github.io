@@ -5,17 +5,14 @@
 	@media screen and (max-width: $tablet) {
 		margin: 4em -2em;
 	}
-	@media screen and (max-width: $mobile) {
+	@media screen and (max-width: $tablet-sm) {
 		flex-wrap: wrap-reverse;
 		margin: 4em 0;
 	}
 	> * {
 		flex: 1;
 		margin: 0 2em;
-		@media screen and (max-width: $tablet) {
-			margin: 0 2em;
-		}
-		@media screen and (max-width: $mobile) {
+		@media screen and (max-width: $tablet-sm) {
 			flex-basis: 100%;
 			margin: 1em 0;
 		}
