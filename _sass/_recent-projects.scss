@@ -1,10 +1,24 @@
 .recent-projects {
 	display: flex;
 	align-items: center;
-	margin: 4em -1em;
+	margin: 4em -4em;
+	@media screen and (max-width: $tablet) {
+		margin: 4em -2em;
+	}
+	@media screen and (max-width: $mobile) {
+		flex-wrap: wrap;
+		margin: 4em 0;
+	}
 	> * {
 		flex: 1;
-		margin: 0 1em;
+		margin: 0 4em;
+		@media screen and (max-width: $tablet) {
+			margin: 0 2em;
+		}
+		@media screen and (max-width: $mobile) {
+			flex-basis: 100%;
+			margin: 2em 0;
+		}
 	}
 	&__image {
 		> img {
