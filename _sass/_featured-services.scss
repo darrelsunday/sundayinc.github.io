@@ -12,7 +12,7 @@
 	> * {
 		flex: 1;
 		margin: 0 2em;
-		@media screen and (max-width: $tablet) {
+		@media screen and (max-width: $mobile) {
 			flex-basis: 100%;
 			margin: 2em 0;
 		}
@@ -36,8 +36,10 @@
 		&__container {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: center;
 			margin: -1em;
+			@media screen and (max-width: $mobile) {
+				justify-content: center;
+			}
 		}
 		&__item {
 			display: flex;
@@ -46,6 +48,7 @@
 			min-width: 8em;
 			height: 4em;
 			margin: 1em;
+			padding: 0 1em;
 			background: $white-pure;
 			transition: all 200ms;
 			@include card(1);

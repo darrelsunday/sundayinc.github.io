@@ -19,7 +19,7 @@ amet euismod libero, vulputate consectetur ante.
 
 {% assign SERVICES_TEXT = "
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dapibus nibh 
+Talk about what your services represent. Lorem ipsum dolor sit amet, consectetur. 
 turpis, vitae eleifend massa mattis facilisis. Integer feugiat vitae metus 
 vulputate dapibus. Phasellus interdum odio eget mollis placerat. Quisque turpis 
 justo, malesuada quis ipsum quis, varius iaculis nisl. Praesent ultricies eget 
