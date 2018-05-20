@@ -1,7 +1,7 @@
 .about {
 	display: flex;
 	align-items: center;
-	margin: 0 -1em;
+	margin: 4em -1em;
 	@media screen and (max-width: $mobile) {
 		flex-wrap: wrap-reverse;
 	}

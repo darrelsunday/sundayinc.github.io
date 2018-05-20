@@ -26,16 +26,27 @@ DO NOT EDIT BELOW THIS LINE
 	</div>
 </div>
 
-<div class="recent-projects">
-	<span class="recent-projects__header">Recent Projects</span>
-	<div class="recent-projects__container">
-		{% assign sorted = (site.projects | sort: 'date') | reverse %}
-		{% for project in sorted limit:3 %}
-		<a class="recent-projects__item" href="{{ project.url }}">
-			<span class="recent-projects__item__title">{{ project.title }}</span>
-			<span class="recent-projects__item__date">{{ project.date | date_to_string }}</span>
-		</a>
+<div class="featured-services">
+	<span class="featured-services__header">Featured Services</span>
+	<div class="featured-services__container">
+		{% for service in site.services %}
+		<span>{{ service.title }}</span>
 		{% endfor %}
 	</div>
-	<span class="recent-projects__footer"><a href="/projects">All projects &rarr;</a></span>
+</div>
+
+<div class="recent-projects">
+	<div class="recent-projects__content">
+		<span class="recent-projects__content__header">Recent Projects</span>
+		<div class="recent-projects__content__container">
+			{% assign sorted = (site.projects | sort: 'date') | reverse %}
+			{% for project in sorted limit:3 %}
+			<a class="recent-projects__content__item" href="{{ project.url }}">{{ project.date | date_to_string }} - {{ project.title }}</a>
+			{% endfor %}
+		</div>
+		<span class="recent-projects__content__footer"><a href="/projects">All projects &rarr;</a></span>
+	</div>
+	<div class="recent-projects__image">
+		<img src="/assets/projects.jpg" alt="projects">
+	</div>
 </div>

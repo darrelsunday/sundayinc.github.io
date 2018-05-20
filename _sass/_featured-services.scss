@@ -1,0 +1,13 @@
+.featured-services {
+	margin: 4em 0;
+	&__header {
+		margin-bottom: 0.5em;
+			font-size: 2em;
+			font-weight: 500;
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		margin: 1em -1em;
+	}
+}
