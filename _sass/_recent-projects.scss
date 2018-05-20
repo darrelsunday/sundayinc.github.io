@@ -24,9 +24,8 @@
 	&__item {
 		flex: 1 1 100%;
 		margin: 1em;
-		padding: 2em 1.5em;
+		padding: 2em;
 		text-align: right;
-		background: $white;
 		transition: all 200ms;
 		@include card(2);
 		&:hover {

@@ -2,9 +2,6 @@
 title: sundayinc
 timezone: UTC
 collections:
-  posts:
-    title: Posts
-    output: true
   projects:
     title: Projects
     output: true
@@ -13,12 +10,20 @@ collections:
     title: Services
     output: true
     permalink: "/services/:path/"
-  test:
-    title: Test
-    output: true
   uploads:
     title: Uploads
     output: true
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "post"
 future: true
 sass:
   sass_dir: _sass
