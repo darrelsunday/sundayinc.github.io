@@ -4,6 +4,11 @@ permalink: "/projects/"
 layout: default
 ---
 
+<!--
+DO NOT EDIT
+-->
+
+
 <div class="projects">
 	<span class="projects__header">Projects</span>
 	{% assign sorted = (site.projects | sort: 'date') | reverse %}
