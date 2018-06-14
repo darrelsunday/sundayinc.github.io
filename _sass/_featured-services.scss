@@ -37,9 +37,6 @@
 			display: flex;
 			flex-wrap: wrap;
 			margin: -1em;
-			@media screen and (max-width: $tablet-sm) {
-				justify-content: center;
-			}
 		}
 		&__item {
 			display: flex;

@@ -12,8 +12,8 @@
 	}
 	&__left {
 		display: flex;
+		justify-content: center;
 		align-items: center;
-		margin-right: 4em;
 		@media screen and (max-width: $tablet) {
 			margin-right: 0;
 		}
@@ -21,7 +21,7 @@
 	&__title {
 		&__name {
 			margin: 0;
-			font-size: 3em;
+			font-size: 2.4em;
 			font-weight: 800;
 			@media screen and (max-width: $mobile) {
 				font-size: 1.6em;
@@ -29,10 +29,10 @@
 		}
 		&__slogan {
 			margin-top: 0.2em;
-			font-size: 1.2em;
+			font-size: 1em;
 			font-weight: 400;
 			@media screen and (max-width: $mobile) {
-				font-size: 0.8em;
+				font-size: 0.6em;
 			}
 		}
 	}
@@ -49,7 +49,8 @@
 		}
 	}
 	&__right {
-		flex: 1 0 auto;
+		display: flex;
+		justify-content: center;
 		margin: 2em 0;
 	}
 	&__link {
