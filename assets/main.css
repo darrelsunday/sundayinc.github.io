@@ -1,0 +1,30 @@
+body {
+	max-width: 500px;
+	margin: 4em auto;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+header > img {
+	margin-right: 2em;
+}
+
+#deck {
+	margin-top: 30px;
+	text-align: center;
+}
+#deck > p {
+	font-style: italic;
+}
+
+main {
+	margin: 50px 0;
+}
+main > img {
+	position: relative;
+	max-width: 100%;
+}
