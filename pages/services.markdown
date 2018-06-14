@@ -4,6 +4,11 @@ permalink: "/services/"
 layout: default
 ---
 
+<!--
+DO NOT EDIT
+-->
+
+
 <div class="services">
 	<span class="services__header">Services</span>
 	{% for service in site.services %}
