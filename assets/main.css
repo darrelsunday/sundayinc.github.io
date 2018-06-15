@@ -42,7 +42,15 @@ header > h1 {
 	word-spacing: 2px;
 }
 
+main {
+	padding: 0 2em;
+}
 main > img {
 	position: relative;
 	max-width: 100%;
+}
+@media (max-width: 580px) {
+	main {
+		padding: 0;
+	}
 }
