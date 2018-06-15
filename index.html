@@ -7,10 +7,12 @@
 	<title>Sunday & Associates, Inc.</title>
 	<meta name="description" content="Environmental and Ecological Advisory">
 	<link rel="stylesheet" href="./assets/main.css">
+	<link rel="shortcut icon" type="image/png" href="./assets/logo.png"/>
 </head>
 <body>
 	<header>
-		<img src="./assets/logo.svg" alt="logo"/>
+		<img src="./assets/logo.svg" alt="logo"
+			onerror="this.src='./assets/logo.png'; this.onerror=null;"/>
 		<h1>Sunday & Associates, Inc.</h1>
 	</header>
 	<div id="deck">
@@ -18,7 +20,9 @@
 		<a href="./assets/resume.pdf">Resume</a>
 	</div>
 	<main>
-		<img src="./assets/sunday.jpg" alt="profile" onmouseover="src='./assets/projects.jpg'" onmouseout="src='./assets/sunday.jpg'"/>
+		<img src="./assets/sunday.jpg" alt="profile" 
+			onmouseover="src='./assets/projects.jpg'" 
+			onmouseout="src='./assets/sunday.jpg'"/>
 	</main>
 </body>
 </html>
